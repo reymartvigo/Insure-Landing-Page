@@ -1,0 +1,108 @@
+@use "variable";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+
+  .nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    ul {
+      list-style-type: none;
+      font-family: variable.$paragraph;
+      color: variable.$dgviolet;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    li:hover {
+      color: variable.$vdviolet;
+    }
+
+    button {
+      font-family: variable.$paragraph;
+      font-weight: 400;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      color: variable.$dviolet;
+      width: auto;
+      padding: 0.3rem 1rem;
+      background: transparent;
+      outline: none;
+      border-color: variable.$dviolet;
+      cursor: pointer;
+    }
+    button:hover {
+      background: variable.$vdviolet;
+      color: variable.$vlgray;
+    }
+  }
+
+  .logo {
+    width: auto;
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav-icon {
+    width: auto;
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    #close-nav {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 2rem 3rem;
+
+    .nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-icon {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 2.5rem 4rem;
+
+    .nav {
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 2rem 10rem;
+
+    .nav {
+      gap: 2rem;
+      ul {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+}

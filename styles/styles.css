@@ -1,0 +1,762 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+header .nav {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+header .nav ul {
+  list-style-type: none;
+  font-family: "Karla", sans-serif;
+  color: hsl(273deg, 4%, 51%);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+header .nav li:hover {
+  color: hsl(270deg, 9%, 17%);
+}
+header .nav button {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: hsl(256deg, 26%, 20%);
+  width: auto;
+  padding: 0.3rem 1rem;
+  background: transparent;
+  outline: none;
+  border-color: hsl(256deg, 26%, 20%);
+  cursor: pointer;
+}
+header .nav button:hover {
+  background: hsl(270deg, 9%, 17%);
+  color: hsl(0deg, 0%, 98%);
+}
+header .logo {
+  width: auto;
+}
+header .logo img {
+  width: 100%;
+}
+header .nav-icon {
+  width: auto;
+}
+header .nav-icon button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+header .nav-icon #close-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 2rem 3rem;
+  }
+  header .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  header .nav-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 2.5rem 4rem;
+  }
+  header .nav {
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 2rem 10rem;
+  }
+  header .nav {
+    gap: 2rem;
+  }
+  header .nav ul {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+nav {
+  display: none;
+}
+nav .mobile-nav {
+  background-image: url(../image/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-color: hsl(270deg, 9%, 17%);
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+nav .mobile-nav ul {
+  list-style-type: none;
+  font-family: "Karla", sans-serif;
+  color: hsl(0deg, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+nav .mobile-nav li:hover {
+  text-decoration: underline;
+}
+nav .mobile-nav button {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  color: hsl(0deg, 0%, 98%);
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  outline: none;
+  border-color: hsl(0deg, 0%, 98%);
+  cursor: pointer;
+}
+nav .mobile-nav button:hover {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(270deg, 9%, 17%);
+}
+
+main {
+  width: 100%;
+  background: hsl(256deg, 26%, 20%);
+  background-image: url(../image/bg-pattern-intro-left-mobile.svg), url(../image/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-image: contain, cover;
+  background-position: left 28rem, right 46.5rem;
+}
+main .intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: hsl(0deg, 0%, 98%);
+}
+main .intro-container .image-1 {
+  width: 100%;
+}
+main .intro-container .image-1 img {
+  width: 100%;
+}
+main .intro-container .image-1 .desktop {
+  display: none;
+}
+main .intro-container .intro-content {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+main .intro-container .intro-content hr {
+  display: none;
+}
+main .intro-container .intro-content h1 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+  line-height: 2.5rem;
+}
+main .intro-container .intro-content p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+main .intro-container .intro-content button {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  color: hsl(0deg, 0%, 98%);
+  width: 10rem;
+  padding: 0.8rem;
+  background: transparent;
+  outline: none;
+  border-color: hsl(0deg, 0%, 98%);
+  cursor: pointer;
+}
+main .intro-container .intro-content button:hover {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(270deg, 9%, 17%);
+}
+main .middle-container {
+  background-image: url(../image/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-image: contain;
+  background-position: right -8rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 10rem 1.5rem;
+}
+main .middle-container hr {
+  border-color: hsl(0deg, 0%, 98%);
+  width: 10rem;
+}
+main .middle-container h2 {
+  letter-spacing: 1px;
+  color: hsl(270deg, 9%, 17%);
+  font-size: 2.5rem;
+}
+main .middle-container .middle-content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+main .middle-container .middle-content div {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+main .middle-container .middle-content div img {
+  width: 25%;
+}
+main .middle-container .middle-content h2 {
+  font-size: 1.5rem;
+}
+main .middle-container .middle-content p {
+  line-height: 1.5rem;
+  color: hsl(273deg, 4%, 51%);
+}
+main .lower-section {
+  background-color: #fff;
+  padding: 0 1rem 10rem;
+}
+main .lower-section .lower-container {
+  width: 100%;
+  background-image: url(../image/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-image: contain;
+  background-position: right top;
+  color: hsl(0deg, 0%, 98%);
+  background-color: hsl(256deg, 26%, 20%);
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+main .lower-section .lower-container h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  line-height: 3rem;
+}
+main .lower-section .lower-container button {
+  margin-top: 3rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  color: hsl(0deg, 0%, 98%);
+  width: 10rem;
+  padding: 0.8rem;
+  background: transparent;
+  outline: none;
+  border-color: hsl(0deg, 0%, 98%);
+  cursor: pointer;
+}
+main .lower-section .lower-container button:hover {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(270deg, 9%, 17%);
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    background-position: left 23rem, right 46.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    background-position: left 57rem, right 71rem;
+  }
+  main .intro-container .image-1 .mobile {
+    display: none;
+  }
+  main .intro-container .image-1 .desktop {
+    display: flex;
+  }
+  main .intro-container .intro-content {
+    padding: 4rem 2rem;
+  }
+  main .middle-container {
+    gap: 1rem;
+    padding: 10rem 5rem;
+  }
+  main .middle-container hr {
+    width: 15rem;
+  }
+  main .middle-container h2 {
+    font-size: 3rem;
+  }
+  main .middle-container .middle-content div img {
+    width: 15%;
+  }
+  main .middle-container .middle-content h2 {
+    font-size: 1.5rem;
+  }
+  main .lower-section {
+    padding: 0 1rem 10rem;
+  }
+  main .lower-section .lower-container {
+    padding: 5rem 2rem;
+    text-align: unset;
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .lower-section .lower-container h2 {
+    font-size: 2.5rem;
+  }
+  main .lower-section .lower-container button {
+    margin-top: 0;
+    width: 20rem;
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    background: unset;
+  }
+  main .intro-container {
+    background: linear-gradient(to top, #fff 0, #fff 15%, hsl(256deg, 26%, 20%) 0, hsl(256deg, 26%, 20%) 50%);
+  }
+  main .intro-container .container {
+    background-image: url(../image/bg-pattern-intro-left-desktop.svg), url(../image/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10%, 20%;
+    background-position: left bottom, right top;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  main .intro-container .container .image-1 {
+    padding: 4rem 3rem 0;
+    width: 100%;
+  }
+  main .intro-container .container .image-1 img {
+    width: 100%;
+  }
+  main .intro-container .container .image-1 .desktop {
+    display: flex;
+  }
+  main .intro-container .container .intro-content {
+    padding: 4rem 3rem 0;
+    text-align: left;
+  }
+  main .intro-container .container .intro-content hr {
+    display: flex;
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+  main .intro-container .container .intro-content h1 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 2.8rem;
+    line-height: 2.5rem;
+  }
+  main .intro-container .container .intro-content p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+  }
+  main .intro-container .container .intro-content button {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    color: hsl(0deg, 0%, 98%);
+    width: 10rem;
+    padding: 0.8rem;
+    background: transparent;
+    outline: none;
+    border-color: hsl(0deg, 0%, 98%);
+    cursor: pointer;
+  }
+  main .intro-container .container .intro-content button:hover {
+    background: hsl(0deg, 0%, 98%);
+    color: hsl(270deg, 9%, 17%);
+  }
+  main .middle-container {
+    background-image: unset;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: unset;
+    gap: 1rem;
+    padding: 7rem 3rem 10rem;
+  }
+  main .middle-container hr {
+    border-color: hsl(0deg, 0%, 98%);
+    width: 10rem;
+  }
+  main .middle-container h2 {
+    letter-spacing: 1px;
+    color: hsl(270deg, 9%, 17%);
+    font-size: 2.5rem;
+  }
+  main .middle-container .middle-content {
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    gap: 2rem;
+    text-align: left;
+  }
+  main .middle-container .middle-content div {
+    margin-top: unset;
+    align-items: unset;
+  }
+  main .middle-container .middle-content div img {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main .intro-container {
+    background: linear-gradient(to top, #fff 0, #fff 20%, hsl(256deg, 26%, 20%) 0, hsl(256deg, 26%, 20%) 50%);
+  }
+  main .intro-container .container {
+    background-image: url(../image/bg-pattern-intro-left-desktop.svg), url(../image/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10%, 20%;
+    background-position: left bottom, right top;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+  }
+  main .intro-container .container .image-1 {
+    padding: 4rem 2rem 0 0;
+    width: 100%;
+  }
+  main .intro-container .container .image-1 img {
+    width: 100%;
+    height: 40rem;
+  }
+  main .intro-container .container .image-1 .desktop {
+    display: flex;
+  }
+  main .intro-container .container .intro-content {
+    padding: 4rem 2rem 0;
+    text-align: left;
+  }
+  main .intro-container .container .intro-content hr {
+    display: flex;
+    width: 10rem;
+    margin-bottom: 4rem;
+  }
+  main .intro-container .container .intro-content h1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+  main .intro-container .container .intro-content p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+  }
+  main .middle-container {
+    background-image: unset;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: unset;
+    gap: 1rem;
+    padding: 5rem 10rem 10rem;
+  }
+  main .middle-container hr {
+    border-color: hsl(0deg, 0%, 98%);
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+  main .middle-container h2 {
+    letter-spacing: 1px;
+    color: hsl(270deg, 9%, 17%);
+    font-size: 4rem;
+  }
+  main .middle-container .middle-content {
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    gap: 2rem;
+    text-align: left;
+  }
+  main .middle-container .middle-content div {
+    margin-top: unset;
+    align-items: unset;
+  }
+  main .middle-container .middle-content div img {
+    width: 25%;
+  }
+  main .lower-section {
+    padding: 0 10rem 10rem;
+  }
+  main .lower-section .lower-container {
+    width: 100%;
+    background-image: url(../image/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-image: contain;
+    background-position: right top;
+    color: hsl(0deg, 0%, 98%);
+    background-color: hsl(256deg, 26%, 20%);
+    padding: 3rem 4rem;
+    justify-content: space-between;
+    text-align: left;
+  }
+  main .lower-section .lower-container h2 {
+    width: 32rem;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 3.5rem;
+  }
+  main .lower-section .lower-container button {
+    margin-top: 0;
+    width: 10rem;
+    padding: 0.8rem;
+  }
+  main .lower-section .lower-container button:hover {
+    background: hsl(0deg, 0%, 98%);
+    color: hsl(270deg, 9%, 17%);
+  }
+}
+footer {
+  width: 100%;
+  background-color: hsl(0deg, 0%, 98%);
+  padding: 5rem 1rem;
+  background-image: url(../image/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+footer .footer-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+footer .footer-header .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer hr {
+  margin: 2rem 0;
+}
+footer section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+footer section h2 {
+  margin-bottom: 2rem;
+  font-family: "Karla", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: hsl(273deg, 4%, 51%);
+  letter-spacing: 1px;
+}
+footer section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  list-style-type: none;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: hsl(256deg, 26%, 20%);
+}
+footer section ul li {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+footer section ul li:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    width: 100%;
+    background-color: hsl(0deg, 0%, 98%);
+    padding: 5rem 3rem;
+    background-image: url(../image/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left top;
+  }
+  footer .footer-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer-header .social-links {
+    gap: 2rem;
+  }
+  footer .footer-header img:hover {
+    cursor: pointer;
+  }
+  footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+  }
+  footer .footer-links section {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    margin-top: 0;
+  }
+  footer .footer-links section h2 {
+    margin-bottom: 2rem;
+    font-family: "Karla", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: hsl(273deg, 4%, 51%);
+    letter-spacing: 1px;
+  }
+  footer .footer-links section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: unset;
+    gap: 1rem;
+    text-align: left;
+    list-style-type: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    color: hsl(256deg, 26%, 20%);
+  }
+  footer .footer-links section ul li {
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  footer .footer-links section ul li:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    width: 100%;
+    background-color: hsl(0deg, 0%, 98%);
+    padding: 5rem 10rem;
+    background-image: url(../image/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: left top;
+  }
+  footer .footer-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer-header .social-links {
+    gap: 2rem;
+  }
+  footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10rem;
+  }
+  footer .footer-links section {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    margin-top: 0;
+  }
+  footer .footer-links section h2 {
+    margin-bottom: 2rem;
+    font-family: "Karla", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: hsl(273deg, 4%, 51%);
+    letter-spacing: 1px;
+  }
+  footer .footer-links section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: unset;
+    gap: 1rem;
+    text-align: left;
+    list-style-type: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    color: hsl(256deg, 26%, 20%);
+  }
+  footer .footer-links section ul li {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  footer .footer-links section ul li:hover {
+    text-decoration: underline;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body h1,
+body h2 {
+  font-family: "DM Serif Display", serif;
+}
+body p {
+  font-family: "Karla", sans-serif;
+}/*# sourceMappingURL=styles.css.map */

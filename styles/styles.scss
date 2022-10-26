@@ -1,0 +1,22 @@
+@use "variable";
+@use "header";
+@use "nav";
+@use "main";
+@use "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  h1,
+  h2 {
+    font-family: variable.$heading;
+  }
+
+  p {
+    font-family: variable.$paragraph;
+  }
+}

@@ -1,0 +1,55 @@
+@use "variable";
+
+nav {
+  display: none;
+  .mobile-nav {
+    background-image: url(../image/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: variable.$vdviolet;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+
+    ul {
+      list-style-type: none;
+      font-family: variable.$paragraph;
+      color: variable.$vlgray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    li:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      font-family: variable.$paragraph;
+      font-weight: 400;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      margin-top: 2rem;
+      color: variable.$vlgray;
+      width: 100%;
+      padding: 1rem;
+      background: transparent;
+      outline: none;
+      border-color: variable.$vlgray;
+      cursor: pointer;
+    }
+    button:hover {
+      background: variable.$vlgray;
+      color: variable.$vdviolet;
+    }
+  }
+}
